@@ -9,10 +9,10 @@ int main(){
     printf("Digite a quantidade de termos da P.A: ");
     scanf("%d", &qtd);
 
-    for(int i = pa; i<=qtd; i++ ){
-        if(i += rz){
-        printf("A progressao aritimetica eh: %d\n",i);
-        }
+    for(int i = 1; i <= qtd; i++ ){
+        
+        printf("A progressao aritimetica eh: %d\n",pa);
+        pa = pa + rz;
     }
 
     return 0;
