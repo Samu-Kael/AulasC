@@ -1,3 +1,4 @@
+//conta ate o infinito
 #include <stdio.h>
 
 int main(){

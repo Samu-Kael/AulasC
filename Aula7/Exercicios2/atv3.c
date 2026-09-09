@@ -1,3 +1,7 @@
+/*escreva um programa que:
+leia inteiros até que o o usuário digite 0.
+Conte e imprima quantos números pares e ímpares foram informados(desconsiderando o 0)*/
+
 #include <stdio.h>
 
 int main(){

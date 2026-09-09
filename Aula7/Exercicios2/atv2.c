@@ -1,3 +1,7 @@
+/*escreva um programa que:
+leia 10 notas (0 a 10)
+calcule e imprima a média, a maior e a menor nota.*/
+
 #include <stdio.h>
 
 int main(){
