@@ -23,9 +23,40 @@ baixo" ou "Comprometimento de renda excessivo").*/
 
 #include <stdio.h>
 
-int main(){
-    int parcelas, score;
-    float rendaMensal, totalImovel;
+int main()
+{
+    float rendaMes, imovelTotal, parcelaValor;
+    int totalParcelas, score;
+
+    printf("Digite o valor da renda mensal bruta: ");
+    scanf("%f",  &rendaMes);
     
+    printf("Digite o valor total do imovel: ");
+    scanf("%f", &imovelTotal);
+    
+    printf("Digite o numero de parcelas desejadas: ");
+    scanf("%d", &totalParcelas);
+    
+    printf("Digite seu score de credito(0 a 1000): ");
+    scanf("%d", &score);
+
+    parcelaValor = imovelTotal / totalParcelas;
+
+    if (score < 400) {
+        printf("Financiamento Recusado: Score muito baixo.\n");
+    } else if (score >= 400 && score < 700) {
+        if (parcelaValor > 0.2 * rendaMes) {
+            printf("Financiamento Recusado: Comprometimento de renda excessivo.\n");
+        } else {
+            printf("Financiamento Aprovado.\n");
+        }
+    } else {
+        if (parcelaValor > 0.3 * rendaMes) {
+            printf("Financiamento Recusado: Comprometimento de renda excessivo.\n");
+        } else {
+            printf("Financiamento Aprovado.\n");
+        }
+    }
+
     return 0;
 }
